@@ -18,5 +18,9 @@
 import pickle
 
 enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
-
-
+# print enron_data.keys()
+# print sum([i['poi'] is True for i in enron_data.values()])
+# print len(enron_data.values()[0])
+print "J Skilling: ", enron_data['SKILLING JEFFREY K']['total_payments']
+print "K Lay: ", enron_data['LAY KENNETH L']['total_payments']
+print "A Fastow: ", enron_data['FASTOW ANDREW S']['total_payments']
